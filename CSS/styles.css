@@ -1,6 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #cafdff;
+    padding: 0 16px;
+}
+
+header {
+    background-color: #eadcff;
+    height: calc(100vh - 70px);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row--header{
+    width: 100%;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-size: 72px;
+}
+
+.subheader{
+    font-size: 36px;
+    margin: 16px 0px 24px 0px;
+}
+
+button{
+    background-color: #05c7cf;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 24px;
+    /* Añade un cursosr cuando pasas el mouse */
+    cursor: pointer;
+}
+
+.logo{
+    width: 300px;
+}
+
+a{
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+
+}
+
+li{
+    padding-left: 16px;
+    list-style-type: none;
+}
+
+#about,
+#discord,
+#contact,
+footer{
+    padding: 40px 0;
+}
+
+/* SECCION ABOUT */
+
+#about{
+    background-color: #f8ffdc;
+}
+
+h2{
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.section__description{
+    display: flex;
+    align-items: center;
+}
+
+.about__img--wrapper{
+    width: 40%;
+}
+
+img{
+    width: 100%;
+}
+
+.section__description--wrapper{
+    width: 60%;
+}
+
+/* Se puede targetear a dos selectores al mismo tiempo con una "," si es que usan la misma propiedad */
+
+.section__description--wrapper,
+.about__img--wrapper{
+    padding: 0 24px;
+}
+
+.section__description--para{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* SECCION DISCORD */
+
+#discord{
+    padding: 40px 0;
+    background-color: #cefeff;
+}
+
+/* SECCION CONTACT */
+
+#contact{
+    background-color: #dce9ff;
+}
+
+form{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+input, textarea{
+    margin-bottom: 24px;
+    font-size: 20px;
+    padding: 6px 12px;
+}
+
+/* SECCION FOOTER */
+
+footer{
+    display: flex; 
+    flex-direction: column;
+    background-color: #aaf5ff;
+    align-items: center;
+}
+
+.footer__logo{
+    max-width: 480px;
+    margin-bottom: 16px;
+}
+
+.footer__links{
+    margin-bottom: 16px; 
+}
+
+.footer__link{
+    text-decoration: none;
+    font-size: 32px;
+    color: blue;
+    font-weight: 700;
+    padding: 0 16px 0 16px;
+}
+
+.footer__copyright{
+    font-size: 20px;
 }

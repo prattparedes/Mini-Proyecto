@@ -2,20 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Proyecto Pratt</title>
-    <link rel="stylesheet" href="./CSS/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/styles.css" />
 </head>
 
 <body>
     <section>
         <nav>
-            <img src="FES.svg" alt="">
+            <img src="FES.svg" class="logo" alt="" />
             <ul>
                 <li><a href="#about">Acerca de</a></li>
                 <li><a href="#discord">Discord</a></li>
@@ -23,64 +20,86 @@
             </ul>
         </nav>
         <header>
-            <div>
-                <h1>Mejor lugar para aprender Frontend Development</h1>
-                <p>Cómo fui de un absoluto novato hasta un profesional gracias a un proceso simplificado</p>
-                <button>Empezar</button>
+            <div class="row--header">
+                <div>
+                    <h1>Mejor lugar para aprender Frontend Development</h1>
+                    <p class="subheader">
+                        Cómo fui de un absoluto novato hasta un profesional gracias a un
+                        proceso simplificado
+                    </p>
+                    <button>Empezar</button>
+                </div>
+                <figure>
+                    <img src="CSS/Assets/laptop.png" alt="Home page image" />
+                </figure>
             </div>
-            <figure>
-                <img src="CSS/Assets/laptop.png" alt="Home page image">
-            </figure>
         </header>
     </section>
     <main>
         <section id="about">
-            <h2>Acerca de</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab in quibusdam aliquid officiis
-                    maxime velit, error ullam mollitia voluptatum laborum, amet autem neque dolores ex ut id tempore
-                    hic?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab in quibusdam aliquid officiis
-                    maxime velit, error ullam mollitia voluptatum laborum, amet autem neque dolores ex ut id tempore
-                    hic?</p>
+                <h2>Acerca de</h2>
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                            ab in quibusdam aliquid officiis maxime velit, error ullam
+                            mollitia voluptatum laborum, amet autem neque dolores ex ut id
+                            tempore hic?
+                        </p>
+                        <p class="section__description--para">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                            ab in quibusdam aliquid officiis maxime velit, error ullam
+                            mollitia voluptatum laborum, amet autem neque dolores ex ut id
+                            tempore hic?
+                        </p>
+                    </div>
+                    <figure class="about__img--wrapper">
+                        <img src="./CSS/Assets/about.jpg" alt="" />
+                    </figure>
             </div>
-            <figure>
-                <img src="./CSS/Assets/about.jpg" alt="">
-            </figure>
         </section>
         <section id="discord">
             <h2>Discord</h2>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab in quibusdam aliquid officiis
-                    maxime velit, error ullam mollitia voluptatum laborum, amet autem neque dolores ex ut id tempore
-                    hic?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ab in quibusdam aliquid officiis
-                    maxime velit, error ullam mollitia voluptatum laborum, amet autem neque dolores ex ut id tempore
-                    hic?</p>
+            <div class="section__description">
+                <figure class="about__img--wrapper">
+                    <img src="./CSS/Assets/discord.png" alt="" />
+                </figure>
+                <div class="section__description--wrapper">
+                    <p class="section__description--para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                        ab in quibusdam aliquid officiis maxime velit, error ullam
+                        mollitia voluptatum laborum, amet autem neque dolores ex ut id
+                        tempore hic?
+                    </p>
+                    <p class="section__description--para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                        ab in quibusdam aliquid officiis maxime velit, error ullam
+                        mollitia voluptatum laborum, amet autem neque dolores ex ut id
+                        tempore hic?
+                    </p>
+                </div>
             </div>
-            <figure>
-                <img src="./CSS/Assets/discord.png" alt="">
-            </figure>
         </section>
         <section id="contact">
             <h2>Contacto</h2>
             <form action="">
                 <label>Email</label>
-                <input type="text" placeholder="email@example.com">
+                <input type="email" placeholder="email@example.com" />
                 <label>Mensaje</label>
                 <textarea name="" id="" cols="30" rows="10" placeholder="Escribe un mensaje aquí."></textarea>
+                <button>Contáctenos!</button>
             </form>
-            <button>Enviar</button>
+
         </section>
         <footer>
-            <img src="FES.svg" alt="">
-            <ul>
-                <li><a href="#about">Acerca de</a></li>
-                <li><a href="#about">Discord</a></li>
-                <li><a href="#about">Contacto</a></li>
-                <li><a href="#about">Servicios</a></li>
+            <img src="FES.svg" class="footer__logo" alt=""/>
+            <ul class="footer__links">
+                <li><a class="footer__link" href="#about">Acerca de</a></li>
+                <li><a class="footer__link" href="#about">Discord</a></li>
+                <li><a class="footer__link" href="#about">Contacto</a></li>
+                <li><a class="footer__link" href="#about">Servicios</a></li>
             </ul>
-            <p>Copyright © Frontend Simplified</p>
+            <p class="footer__copyright">Copyright © Frontend Simplified</p>
         </footer>
     </main>
 </body>
