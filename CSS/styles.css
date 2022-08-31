@@ -24,12 +24,13 @@ header {
     justify-content: center;
 }
 
-.row--header{
+.row{
     width: 100%;
     max-width: 1300px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
 h1{
