@@ -141,6 +141,7 @@ form{
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea{
@@ -164,7 +165,9 @@ footer{
 }
 
 .footer__links{
-    margin-bottom: 16px; 
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: row;
 }
 
 .footer__link{
@@ -177,4 +180,82 @@ footer{
 
 .footer__copyright{
     font-size: 20px;
+}
+
+/* CELULARES PEQUEÑOS/TABLETS/CELULARESGRANDES */
+
+@media (max-width:728px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .home__description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__description--button{
+        max-width: 240px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 52px;
+    }
+
+    .subheader{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .section__description{
+        flex-direction: column;
+    }
+
+    .section__description--wrapper{
+        width: 100%;
+    }
+
+    .about__img--wrapper{
+        width: 100%;
+    }
+
+    #discord .section__description{
+        flex-direction: column-reverse;
+    }
+
+    footer{
+        padding: 48px 24px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .footer__logo{
+       max-width: 360px;
+    }
+
+    .footer__links{
+        padding-left: 8px;
+        padding: 0 auto;
+        display: contents;
+        display: flex;
+    }
+
+    li{
+        padding: 0;
+    }
+
+    .footer__link{
+        font-size: 18px;
+        padding: 0 8px 0 8px;
+        text-decoration: underline;
+        color: #000;
+    }
 }
